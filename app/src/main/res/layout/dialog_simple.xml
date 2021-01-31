@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_shape_simple"
+    android:elevation="12sp">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_simple_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textTitleSimple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="17sp"
+            android:textColor="#0a0a0a"
+            android:gravity="center"
+            android:padding="15dp"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/imageAnimationSimple"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_below="@id/textTitleSimple"
+            app:lottie_rawRes="@raw/delete_bubble"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            android:visibility="gone"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/textMessageSimple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:textSize="15.5sp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_below="@id/imageAnimationSimple"/>
+
+        <LinearLayout
+            android:id="@+id/LLayout"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textMessageSimple">
+
+            <LinearLayout
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/btnSimpleCancel"
+                android:clickable="true"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:text="Cancel"
+                android:background="@drawable/white_shape"
+                android:elevation="2dp"
+                android:textAllCaps="false"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageNegative"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/mrkazRed"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:background="@drawable/ic_empty"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/btnTextNegativeSimple"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/mrkazRed"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/btnSimpleDelete"
+                android:clickable="true"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:text="Cancel"
+                android:background="@drawable/red_shape_for_dialog_button"
+                android:elevation="2dp"
+                android:textAllCaps="false"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imagePositive"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:background="@drawable/ic_empty"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/btnTextPositiveSimple"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delete"
+                    android:elevation="2dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    
+
+</LinearLayout>

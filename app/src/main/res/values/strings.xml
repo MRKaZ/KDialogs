@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Custom Dialogs</string>
+    <string name="dialog_title">KGamage Custom Dialogs Title</string>
+    <string name="dialog_message">KGamage Custom Dialogs </string>
+
+    <string name="delete_title">Delete?</string>
+    <string name="delete_message">Are you sure want to delete this files!?</string>
+
+    <string name="alert_title">Alert!</string>
+    <string name="alert_message">This is Kaz Alert Dialog!</string>
+
+    <string name="success_title">Success Dialog!</string>
+    <string name="success_message">Kaz Success Dialog</string>
+
+    <string name="warning_title">Warning Dialog!</string>
+    <string name="warning_message">Kaz Warning Dialog</string>
+
+    <string name="error_title">Error Dialog!</string>
+    <string name="error_message">Kaz Error Dialog</string>
+
+    <string name="button_positive">Positive</string>
+    <string name="button_negative">Negative</string>
+
+    <string name="marquee_message">
+        KazDialog Custom Dialogs for Developers...Features : Featuring Animation With Lottie Animation.
+        You Can Customize All Animations, Buttons, Backgrounds &amp; Functions  Made with in <b> 🇱🇰 Srilanka</b></string>
+</resources>

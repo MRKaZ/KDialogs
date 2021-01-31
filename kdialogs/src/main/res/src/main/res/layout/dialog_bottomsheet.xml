@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_shape_bottomsheet"
+    android:elevation="8sp">
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:id="@+id/relative_layout_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="17dp"
+            android:textColor="#0a0a0a"
+            android:gravity="center"
+            android:padding="13dp" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/imageAnimation"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_below="@id/textTitle"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            android:scaleType="centerCrop"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/textMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_below="@id/imageAnimation" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textMessage">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/btnCancel"
+                android:clickable="true"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:text="Cancel"
+                android:background="@drawable/white_shape"
+                android:elevation="2dp"
+                android:textColor="@color/orangeRed"
+                android:textAllCaps="false"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageNegative"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/mrkazRed"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:background="@drawable/ic_empty"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/btnTextNegative"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:textSize="14dp"
+                    android:textColor="@color/mrkazRed"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/btnDelete"
+                android:clickable="true"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:text="Cancel"
+                android:background="@drawable/red_shape_for_dialog_button"
+                android:elevation="2dp"
+                android:textColor="@color/orangeRed"
+                android:textAllCaps="false"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imagePositive"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_empty"
+                    android:backgroundTint="@color/white"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/btnTextPositive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:text="Delete"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+
+</LinearLayout>

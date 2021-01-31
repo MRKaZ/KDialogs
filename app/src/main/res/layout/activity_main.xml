@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFF7F7"
+    tools:context=".MainActivity">
+
+   <RelativeLayout
+       android:id="@+id/RRLayout"
+       android:layout_width="match_parent"
+       android:layout_height="125dp"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentEnd="true"
+       android:layout_alignParentStart="true"
+       android:background="@drawable/main_background">
+
+      <ImageView
+          android:id="@+id/imageMain"
+          android:layout_width="75dp"
+          android:layout_height="75dp"
+          android:src="@drawable/ic_main_logo"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="10dp"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Kaz Dialogs"
+          android:textColor="@color/white"
+          android:textSize="18sp"
+          android:layout_below="@id/imageMain"
+          android:layout_centerHorizontal="true"/>
+
+   </RelativeLayout>
+
+   <LinearLayout
+       android:layout_below="@id/RRLayout"
+       android:id="@+id/LLayout_2"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:gravity="center">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Example Dialogs"
+          android:textColor="@android:color/black"
+          android:gravity="center"
+          android:textSize="17sp"
+          android:layout_marginTop="10dp"/>
+
+      <View
+          android:layout_marginTop="15dp"
+          android:layout_marginBottom="15dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="0.1dp"
+          android:background="@android:color/darker_gray"/>
+
+
+      <Button
+          android:id="@+id/btnSuccessDialog"
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          android:background="@drawable/success_button_click_ripple"
+          android:layout_margin="10dp"
+          android:text="Success Animation Dialog"
+          android:textColor="@color/white"
+          android:textAllCaps="false"
+          android:elevation="2sp" />
+
+      <Button
+          android:id="@+id/btnWarningDialog"
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          android:background="@drawable/warning_button_click_ripple"
+          android:layout_margin="10dp"
+          android:text="Warning Animation Dialog"
+          android:textColor="@color/white"
+          android:textAllCaps="false"
+          android:elevation="2sp" />
+
+      <Button
+          android:id="@+id/btnErrorDialog"
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          android:background="@drawable/red_button_click_ripple"
+          android:layout_margin="10dp"
+          android:text="Error Animation Dialog"
+          android:textColor="@color/white"
+          android:textAllCaps="false"
+          android:elevation="2sp" />
+
+      <View
+          android:layout_marginTop="15dp"
+          android:layout_marginBottom="15dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="0.1dp"
+          android:background="@android:color/darker_gray"/>
+
+
+      <Button
+          android:id="@+id/btnBottomDialog"
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          android:background="@drawable/red_button_click_ripple"
+          android:layout_margin="10dp"
+          android:text="Bottom Sheet Dialog With Animation"
+          android:textColor="@color/white"
+          android:textAllCaps="false"
+          android:elevation="2sp"/>
+
+      <Button
+          android:id="@+id/btnSimpleDialog"
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          android:background="@drawable/red_button_click_ripple"
+          android:layout_margin="10dp"
+          android:text="Simple Dialog With Animation"
+          android:textColor="@color/white"
+          android:textAllCaps="false"
+          android:elevation="2sp"/>
+
+      <Button
+          android:id="@+id/btnAlertDialog"
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          android:background="@drawable/red_button_click_ripple"
+          android:layout_margin="10dp"
+          android:text="Alert Dialog"
+          android:textColor="@color/white"
+          android:textAllCaps="false"
+          android:elevation="2sp"/>
+
+   </LinearLayout>
+
+</RelativeLayout>

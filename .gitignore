@@ -1,0 +1,4 @@
+# Project exclude paths
+/.gradle/
+/kdialogs/build/
+/kdialogs/build/intermediates/javac/debug/classes/

@@ -1,0 +1,3 @@
+include ':kdialogs'
+include ':app'
+rootProject.name = "Custom Dialogs"
